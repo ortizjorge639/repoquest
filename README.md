@@ -6,6 +6,8 @@ Clone a repo. Run `npx repoquest`. Get a self-contained HTML tutorial that walks
 
 No more stale READMEs. No more walls of text. Just play and follow along.
 
+![RepoQuest tutorial theme — Requirements scene with sidebar nav](docs/screenshot.jpg)
+
 ---
 
 ## Quick Start
