@@ -134,6 +134,28 @@ src/
 
 **Pipeline:** `parseRepo(dir) → RepoData → generate(data, options) → HTML string` — each stage is independently testable.
 
+## Rendering to Video
+
+The HTML output can be rendered to a video clip using HyperFrames:
+
+```bash
+# Render to MP4
+npx hyperframes render repoquest.html --output setup.mp4
+
+# Render to GIF (great for README embeds)
+npx hyperframes render repoquest.html --output setup.gif
+
+# Render to WebM
+npx hyperframes render repoquest.html --output setup.webm
+```
+
+HyperFrames headlessly captures every frame of the composition and produces a clean video. The output can be:
+- Shared directly (Slack, Discord, Twitter/X)
+- Embedded in the GitHub README as a GIF
+- Used as a product demo clip
+
+If HyperFrames is not installed: `npm install -g hyperframes`
+
 ## License
 
 MIT © Jorge Ortiz. Uses [HyperFrames](https://github.com/heygen-com/hyperframes) (Apache 2.0) for the HTML composition format.
