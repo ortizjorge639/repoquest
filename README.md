@@ -186,4 +186,10 @@ MIT — built to be open-sourced and forked freely.
 
 ---
 
-*Built with ⚔ and [HyperFrames](https://hyperframes.dev) by [@qwibitai](https://x.com/qwibitai)*
+*Built with ⚔ and [HyperFrames](https://github.com/heygen-com/hyperframes) by [@qwibitai](https://x.com/qwibitai)*
+
+---
+
+## Attribution
+
+RepoQuest generates HTML compositions using the [HyperFrames](https://github.com/heygen-com/hyperframes) format — an open-source video rendering framework by [HeyGen](https://heygen.com), licensed under [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0). See [NOTICE](./NOTICE) for details.
