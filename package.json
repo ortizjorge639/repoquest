@@ -1,0 +1,39 @@
+{
+  "name": "repoquest",
+  "version": "0.1.0",
+  "description": "Turn any GitHub repo into a cinematic setup guide. Clone it, run it, watch it.",
+  "keywords": [
+    "cli",
+    "documentation",
+    "hyperframes",
+    "video",
+    "setup",
+    "developer-tools",
+    "onboarding"
+  ],
+  "homepage": "https://github.com/qwibitai/repoquest",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "repoquest": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "marked": "^12.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.39",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
