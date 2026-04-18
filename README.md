@@ -186,7 +186,7 @@ MIT — built to be open-sourced and forked freely.
 
 ---
 
-*Built with ⚔ and [HyperFrames](https://github.com/heygen-com/hyperframes) by [@qwibitai](https://x.com/qwibitai)*
+*Built with ⚔ and [HyperFrames](https://github.com/heygen-com/hyperframes)*
 
 ---
 
