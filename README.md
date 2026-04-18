@@ -190,6 +190,25 @@ MIT — built to be open-sourced and forked freely.
 
 ---
 
+## Rendering to Video
+
+The HTML output is a valid [HyperFrames](https://github.com/heygen-com/hyperframes) composition — you can render it to a video clip:
+
+```bash
+# Install Chrome renderer (once)
+npx hyperframes browser ensure
+
+# Render to MP4
+npx hyperframes render . --output setup.mp4
+
+# Render to GIF (great for embedding in README)
+npx hyperframes render . --output setup.gif
+```
+
+Run from the directory containing your generated `repoquest.html` (rename it to `index.html` first). Output can be shared on Slack, X, Discord, or embedded directly in your GitHub README.
+
+---
+
 ## Attribution
 
 RepoQuest generates HTML compositions using the [HyperFrames](https://github.com/heygen-com/hyperframes) format — an open-source video rendering framework by [HeyGen](https://heygen.com), licensed under [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0). See [NOTICE](./NOTICE) for details.
