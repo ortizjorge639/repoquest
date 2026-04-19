@@ -7,7 +7,7 @@ const HIGHLIGHT_FILES = [
   'index.ts', 'index.js', 'main.ts', 'main.js', 'app.ts', 'app.js',
   'server.ts', 'server.js', 'cli.ts', 'cli.js',
   'CLAUDE.md', 'docker-compose.yml', 'Dockerfile',
-  '.env.example', 'schema.prisma', 'schema.sql',
+  '.env.example', '.env.sample', '.env.template', '.env.local.example', '.env.defaults', 'schema.prisma', 'schema.sql',
 ];
 
 const IGNORED_DIRS = new Set([
@@ -103,8 +103,10 @@ function walkTree(dir: string, base: string, depth = 0, max = 3): FileNode[] {
 }
 
 function parseEnvExample(dir: string): EnvVar[] {
-  const path = join(dir, '.env.example');
-  if (!existsSync(path)) return [];
+  const candidates = ['.env.example', '.env.sample', '.env.template', '.env.local.example', '.env.defaults'];
+  const found = candidates.find(f => existsSync(join(dir, f)));
+  if (!found) return [];
+  const path = join(dir, found);
   const lines = readFileSync(path, 'utf8').split('\n');
   const vars: EnvVar[] = [];
   let lastComment = '';
